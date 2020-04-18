@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>스위치문으로스위치를하면스위띠</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    let day;
+    switch(new Date().getDay()){
+        case 0:
+        day = "선데이"
+        break;
+        case 1:
+        day = "먼데이"
+        break;
+        case 2:
+        day = "투스데이"
+        break;
+        case 3:
+        day = "웬즈데이"
+        break;
+        case 4:
+        day = "쎄러데이"
+        case 5:
+        day = "프라이데이"
+        break;
+        case 6:
+        day = "세러데이"
+        break;
+
+        default:
+        day = "몰라시발"
+    }
+    document.getElementById("demo").innerHTML = day;
+        console.log(day);
+    </script>
+</body>
+</html>

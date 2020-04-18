@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <button onclick="sort()">올라갔다가</button>
+    <button onclick="reverse()">내려갔다가</button>
+    <button onclick="random()">막섞기다가</button>
+    <script>
+    var zoo = ["1","3","9","7","5","6"];
+    document.getElementById("demo1").innerHTML=zoo;
+
+    function sort(){
+        zoo.sort();
+        document.getElementById("demo1").innerHTML=zoo;
+    }
+    function reverse(){
+        zoo.sort(function(a,b){return b-a});
+        document.getElementById("demo1").innerHTML=zoo;
+    }
+    function random(){
+        zoo.sort(function(a,b){return 0.5 - Math.random()});
+        document.getElementById("demo1").innerHTML=zoo;
+    }
+    
+    </script>
+    
+</body>
+</html>

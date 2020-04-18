@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>라퓨타 라퓨타 </title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+    let x = ["가","나","다","라","마","바","사"];
+    let text = "";
+
+    label:
+    {
+        text += x[0] + "<br>";
+        text += x[1] + "<br>";
+        text += x[2] + "<br>";
+        break label;
+        text += x[3] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+    
+</body>
+</html>

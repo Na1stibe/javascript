@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#forever02</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myfunction()">몇시?</button>
+
+    <script>
+    function myfunction(){
+        let  hour,clock;
+        hour = new Date().getHours();
+        if (hour >= 17 && hour < 18){
+        clock = "5시";
+        } else if (hour >= 18 && hour < 19){
+        clock = "6시";
+        } else if (hour >= 19 && hour < 20){
+        clock = "7시";
+        }
+        else{
+            clock = "아모르파티";
+        }
+        console.log(hour);
+        document.getElementById("demo").innerHTML = clock;
+    }
+    
+    </script>
+</body>
+</html>

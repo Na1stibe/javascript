@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age">
+    
+    <button onclick="myfunction()">눌러주세요.</button>
+    <p id="ans"></p>
+    <script>
+    function myfunction(){
+        let age , man
+        age = document.getElementById("age").value;
+        man = (age < 20)? "아직 청소년" : "이젠 성인";
+        document.getElementById("ans").innerHTML = man;
+    }
+    </script>
+    
+</body>
+</html>

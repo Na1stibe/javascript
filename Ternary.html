@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2019-12-17 5:51</title>
+</head>
+<body>
+    <input id="age">
+    <button onclick="myfunction()">눌러</button>
+    <p id="demo"></p>
+
+    <script>
+    function myfunction(){
+    let age, click
+        age = document.getElementById("age").value;
+        click = (age <18 )? "젋은딱" : "틀딱";
+        document.getElementById("demo").innerHTML = click;
+    }
+    </script>
+    
+</body>
+</html>
